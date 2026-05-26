@@ -26,7 +26,7 @@ farmers and agricultural planners in making informed decisions.
 ---
 
 ## ✨ Features
-- **Crop Yield Prediction** — Predicts yield in kg/hectare for 55 crops across 30 Indian states using a Random Forest Regressor with 95% accuracy
+- **Crop Yield Prediction** — Predicts yield in kg/hectare for 55 crops across 30 Indian states using a Random Forest Regressor with an R² score of 0.95
 - **Automatic Rainfall Fetching** — Annual rainfall is automatically fetched from the Open-Meteo Historical Weather API based on the selected state and crop year — no manual input needed
 - **AI-Powered Analysis** — Groq LLM (LLaMA 3.3 70B) generates a farmer-friendly analysis covering yield assessment, rainfall impact, fertilizer usage and practical recommendations
 - **High Accuracy Model** — Random Forest Regressor trained on Indian crop yield data (1997–2020), achieving R² of 0.95, MAE of 0.65 and RMSE of 2.28
