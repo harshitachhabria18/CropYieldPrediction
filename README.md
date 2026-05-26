@@ -64,7 +64,6 @@ User gets:
 
 ---
 
-
 ## 🗂️ Project Structure
 ```
 CropYieldPrediction/
@@ -145,7 +144,9 @@ Get a free API key at [console.groq.com](https://console.groq.com)
 **5. Add the trained model:**
 
 Run all cells in `notebooks/CropYieldProduction.ipynb` to generate:
+```
 model/crop_yield_pipeline.pkl
+```
 
 **6. Run the app:**
 ```bash
