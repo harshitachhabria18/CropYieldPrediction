@@ -61,6 +61,10 @@ User gets:
 - AI-generated insights
 ```
 
+---
+
+## 🏗️ Architecture
+![Architecture](screenshots/architecture.png)
 
 ---
 
@@ -206,6 +210,7 @@ streamlit run app.py
 ![Home](screenshots/home.png)
 
 ![Result](screenshots/result.png)
+
 
 ---
 
