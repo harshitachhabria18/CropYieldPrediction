@@ -1,5 +1,7 @@
 # 🌾 Crop Yield Predictor
 
+![Python](https://img.shields.io/badge/Python-3.11-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-brightgreen) ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6.1-orange) ![Groq](https://img.shields.io/badge/Groq-LLaMA3.3-purple)
+
 ## 🚀 Live Demo
 [https://cropyieldprediction-lqbjdt5vd2676tmmuzq6sa.streamlit.app/](https://cropyieldprediction-lqbjdt5vd2676tmmuzq6sa.streamlit.app/)
 
