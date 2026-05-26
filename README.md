@@ -2,8 +2,12 @@
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-brightgreen) ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6.1-orange) ![Groq](https://img.shields.io/badge/Groq-LLaMA3.3-purple)
 
+---
+
 ## 🚀 Live Demo
 [https://cropyieldprediction-lqbjdt5vd2676tmmuzq6sa.streamlit.app/](https://cropyieldprediction-lqbjdt5vd2676tmmuzq6sa.streamlit.app/)
+
+---
 
 ## 📖 About
 A machine learning-powered web application that predicts crop yield across 
@@ -19,12 +23,17 @@ This project combines machine learning, external API integration, and
 generative AI to deliver data-driven agricultural insights that can assist 
 farmers and agricultural planners in making informed decisions.
 
+---
+
 ## ✨ Features
 - **Crop Yield Prediction** — Predicts yield in kg/hectare for 55 crops across 30 Indian states using a Random Forest Regressor with 95% accuracy
 - **Automatic Rainfall Fetching** — Annual rainfall is automatically fetched from the Open-Meteo Historical Weather API based on the selected state and crop year — no manual input needed
 - **AI-Powered Analysis** — Groq LLM (LLaMA 3.3 70B) generates a farmer-friendly analysis covering yield assessment, rainfall impact, fertilizer usage and practical recommendations
 - **High Accuracy Model** — Random Forest Regressor trained on Indian crop yield data (1997–2020), achieving R² of 0.95, MAE of 0.65 and RMSE of 2.28
 - **Clean Streamlit UI** — Intuitive interface with a professional agricultural theme, responsive layout and real-time spinners for API calls
+
+---
+
 
 ## ⚙️ How It Works
 **User Input (Streamlit UI)**
@@ -50,7 +59,12 @@ User gets:
 - Predicted yield
 - AI-generated insights
 
+
+---
+
+
 ## 🗂️ Project Structure
+```
 CropYieldPrediction/
 │
 ├── .streamlit/
@@ -77,6 +91,10 @@ CropYieldPrediction/
 ├── config.py
 ├── requirements.txt
 ├── runtime.txt
+```
+
+---
+
 
 ## 🛠️ Tech Stack
 | Layer | Technology |
@@ -88,6 +106,8 @@ CropYieldPrediction/
 | Weather API | Open-Meteo Historical Archive API |
 | AI Analysis | Groq LLM (LLaMA 3.3 70B Versatile) |
 | Model Serialization | Joblib |
+
+---
 
 ## 💻 Setup & Installation
 **1. Clone the repository:**
@@ -115,7 +135,9 @@ pip install -r requirements.txt
 **4. Add your Groq API key:**
 
 Create a `.env` file in the root directory:
+```
 GROQ_API_KEY=your_groq_api_key_here
+```
 Get a free API key at [console.groq.com](https://console.groq.com)
 
 **5. Add the trained model:**
@@ -128,6 +150,8 @@ model/crop_yield_pipeline.pkl
 streamlit run app.py
 ```
 
+---
+
 ## 📊 Model Performance
 | Metric | Score |
 |---|---|
@@ -139,12 +163,19 @@ streamlit run app.py
 **Training Data:** 1997 – 2020 | 30 States | 55 Crops | 6 Seasons  
 **Train/Test Split:** 80% training — 20% testing
 
+
+---
+
+
 ## 📡 How Rainfall Fetching Works
 1. User selects **State** and **Crop Year**
 2. App looks up the state's **latitude/longitude** from `config.py`
 3. Calls **Open-Meteo Historical Archive API** with `start_date = YEAR-01-01` and `end_date = YEAR-12-31`
 4. Sums up all 365 daily `precipitation_sum` values
 5. Passes the **annual total rainfall (mm)** directly to the model
+
+---
+
 
 ## 📝 Dataset
 - **Source:** Indian Crop Production Statistics
@@ -153,6 +184,10 @@ streamlit run app.py
 - **Features:** Crop, Crop Year, Season, State, Area, Annual Rainfall, Fertilizer, Pesticide
 - **Target:** Yield (kg/hectare)
 
+
+---
+
+
 ## 🔮 Future Enhancements
 - **Satellite Data Integration** — Add NDVI and NDMI satellite indices to capture real-time crop health and soil moisture for improved prediction accuracy
 - **Real-time Crop Year** — Support crop years beyond 2020 using Open-Meteo forecast data
@@ -160,9 +195,16 @@ streamlit run app.py
 - **Interactive Map** — Visualize predicted yield across Indian states on an interactive map
 - **Crop Comparison** — Compare predicted yield of multiple crops side by side for the same inputs
 
+
+---
+
+
 ## 📸 Screenshots
 ![Home](screenshots/home.png)
 ![Result](screenshots/result.png)
+
+---
+
 
 ## 👨‍💻 Author
 **Harshita Chhabria**
