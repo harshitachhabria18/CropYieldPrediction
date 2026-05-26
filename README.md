@@ -36,28 +36,30 @@ farmers and agricultural planners in making informed decisions.
 
 
 ## ⚙️ How It Works
-**User Input (Streamlit UI)**
+```
+User Input (Streamlit UI)
 User enters: Crop, Season, State, Crop Year, Area, Fertilizer, Pesticide
-↓
-**Rainfall Data Fetching**
+          ↓
+Rainfall Data Fetching
 System auto-detects state coordinates and fetches historical rainfall data
 using Open-Meteo API. Daily values are aggregated into annual rainfall (mm).
-↓
-**Yield Prediction**
+          ↓
+Yield Prediction
 All inputs + rainfall data are passed to a trained Random Forest model
 which predicts crop yield (kg/hectare).
-↓
-**AI Insights (Groq LLM)**
+          ↓
+AI Insights (Groq LLM)
 Prediction and inputs are sent to LLaMA 3.3 (Groq API) to generate:
 - Yield interpretation (low/moderate/high)
 - Impact of rainfall
 - Farming recommendations
-↓
-**Display Results**
+          ↓
+Display Results
 User gets:
 - Rainfall data
 - Predicted yield
 - AI-generated insights
+```
 
 
 ---
@@ -201,6 +203,7 @@ streamlit run app.py
 
 ## 📸 Screenshots
 ![Home](screenshots/home.png)
+
 ![Result](screenshots/result.png)
 
 ---
