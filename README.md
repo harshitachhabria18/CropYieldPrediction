@@ -25,7 +25,6 @@ farmers and agricultural planners in making informed decisions.
 - **Clean Streamlit UI** — Intuitive interface with a professional agricultural theme, responsive layout and real-time spinners for API calls
 
 ## ⚙️ How It Works
-```
 **User Input (Streamlit UI)**
 User enters: Crop, Season, State, Crop Year, Area, Fertilizer, Pesticide
 ↓
@@ -48,7 +47,6 @@ User gets:
 - Rainfall data
 - Predicted yield
 - AI-generated insights
-```
 
 ## 🗂️ Project Structure
 CropYieldPrediction/
