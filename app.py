@@ -145,7 +145,7 @@ Your analysis should cover:
 3. Whether the fertilizer and pesticide usage seems appropriate
 4. One or two practical recommendations to improve yield
 
-Keep the tone helpful, simple, and farmer-friendly.
+Keep the tone helpful, simple, and farmer-friendly. Do NOT use markdown asterisks (**) for bolding. If you need to emphasize or bold text, use HTML <b> tags instead (e.g., <b>high yield</b>).
 """
 
     response = client.chat.completions.create(
