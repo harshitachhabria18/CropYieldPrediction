@@ -5,6 +5,7 @@
 import streamlit as st
 import sys
 import os
+import re
 from groq import Groq
 from dotenv import load_dotenv
 
@@ -153,8 +154,12 @@ Keep the tone helpful, simple, and farmer-friendly. Do NOT use markdown asterisk
         max_tokens=GROQ_MAX_TOKENS,
         messages=[{"role": "user", "content": prompt}]
     )
-
-    return response.choices[0].message.content
+    content = response.choices[0].message.content
+    
+    # Convert markdown **bold** to HTML <b>bold</b> so it renders in the Streamlit span
+    content = re.sub(r'\*\*(.*?)\*\*', r'<b>\1</b>', content)
+    
+    return content
 
 # ============================================
 # HEADER
