@@ -97,7 +97,7 @@ OPEN_METEO_URL = "https://archive-api.open-meteo.com/v1/archive"
 # GROQ LLM CONFIG
 # ============================================
 
-GROQ_MODEL = "llama-3.3-70b-versatile"
+GROQ_MODEL = "llama-3.1-70b-versatile"
 GROQ_MAX_TOKENS = 512
 
 # ============================================
