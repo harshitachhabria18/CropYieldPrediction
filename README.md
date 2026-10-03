@@ -1,6 +1,6 @@
 # 🌾 Crop Yield Predictor
 
-![Python](https://img.shields.io/badge/Python-3.11-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-brightgreen) ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6.1-orange) ![Groq](https://img.shields.io/badge/Groq-LLaMA3.3-purple)
+![Python](https://img.shields.io/badge/Python-3.11-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-brightgreen) ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.6.1-orange) ![Groq](https://img.shields.io/badge/Groq-GPT--OSS-purple)
 
 ---
 
@@ -28,7 +28,7 @@ farmers and agricultural planners in making informed decisions.
 ## ✨ Features
 - **Crop Yield Prediction** — Predicts yield in kg/hectare for 55 crops across 30 Indian states using a Random Forest Regressor with an R² score of 0.95
 - **Automatic Rainfall Fetching** — Annual rainfall is automatically fetched from the Open-Meteo Historical Weather API based on the selected state and crop year — no manual input needed
-- **AI-Powered Analysis** — Groq LLM (LLaMA 3.3 70B) generates a farmer-friendly analysis covering yield assessment, rainfall impact, fertilizer usage and practical recommendations
+- **AI-Powered Analysis** — Groq LLM (OpenAI GPT-OSS 20B) generates a farmer-friendly analysis covering yield assessment, rainfall impact, fertilizer usage and practical recommendations
 - **High Accuracy Model** — Random Forest Regressor trained on Indian crop yield data (1997–2020), achieving R² of 0.95, MAE of 0.65 and RMSE of 2.28
 - **Clean Streamlit UI** — Intuitive interface with a professional agricultural theme, responsive layout and real-time spinners for API calls
 
@@ -49,7 +49,7 @@ All inputs + rainfall data are passed to a trained Random Forest model
 which predicts crop yield (kg/hectare).
           ↓
 AI Insights (Groq LLM)
-Prediction and inputs are sent to LLaMA 3.3 (Groq API) to generate:
+Prediction and inputs are sent to GPT-OSS (Groq API) to generate:
 - Yield interpretation (low/moderate/high)
 - Impact of rainfall
 - Farming recommendations
@@ -109,7 +109,7 @@ CropYieldPrediction/
 | Data Processing | Pandas, NumPy |
 | Preprocessing | Scikit-learn (ColumnTransformer, OneHotEncoder, Pipeline) |
 | Weather API | Open-Meteo Historical Archive API |
-| AI Analysis | Groq LLM (LLaMA 3.3 70B Versatile) |
+| AI Analysis | Groq LLM (OpenAI GPT-OSS 20B) |
 | Model Serialization | Joblib |
 
 ---
