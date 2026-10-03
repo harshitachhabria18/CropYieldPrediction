@@ -64,7 +64,7 @@ User gets:
 ---
 
 ## 🏗️ System Architecture
-![Architecture](screenshots/architecture.png)
+![Architecture](screenshots/architechture.png)
 
 ---
 
